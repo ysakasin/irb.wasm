@@ -1,13 +1,9 @@
-# irb.wasm
+# bcdice-repl.wasm
 
-IRB on browser powered by WebAssembly.
-You can try irb.wasm on your browser. It works on CRuby ported to WebAssembly.
+BCDice REPL on browser powered by WebAssembly.
+You can try bcdice-repl.wasm on your browser. It works on CRuby ported to WebAssembly.
 
-Demo: https://irb-wasm.vercel.app/
-
-<div align="center">
-<img src=./docs/demo.png width="400px">
-</div>
+Demo: TBD
 
 ## Dependencies
 
@@ -16,6 +12,7 @@ Demo: https://irb-wasm.vercel.app/
 ## Development
 
 ```console
+$ git submodule init
 $ make static/irb.wasm
 $ npm install
 $ npx parcel ./src/index.html
