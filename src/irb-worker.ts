@@ -40,7 +40,7 @@ Comlink.expose({
         };
 
         const args = [
-            "irb.wasm", "-I/gems/lib", "/gems/libexec/irb", "--prompt", "default"
+            "irb.wasm", "-I/gems/lib", "-I/bcdice/lib", "/gems/libexec/bcdice"
         ];
 
         termWriter("$ # Source code is available at https://github.com/kateinoigakukun/irb.wasm\r\n");

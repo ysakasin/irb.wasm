@@ -1,0 +1,13 @@
+
+require "i18n"
+require "i18n/backend/fallbacks"
+require "readline"
+require "bcdice"
+require "bcdice/repl"
+
+ap_path = __FILE__
+STDOUT.sync = true
+$0 = File::basename(ap_path, ".rb") if ap_path
+
+repl = BCDice::REPL.new()
+repl.run()
